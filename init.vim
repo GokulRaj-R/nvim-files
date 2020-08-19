@@ -1,5 +1,6 @@
 " Editor Settings
 autocmd GUIEnter * simalt ~x
+au VimEnter * GuiPopupmenu 0
 set nu
 set mouse=a
 set smarttab
@@ -13,7 +14,6 @@ set shiftwidth=2
 set softtabstop=2
 set clipboard=unnamedplus
 set backspace=indent,eol,start
-
 
 call plug#begin("~/.vim/plugged")
 Plug 'dracula/vim'
