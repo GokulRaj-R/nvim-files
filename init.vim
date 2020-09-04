@@ -101,8 +101,8 @@ vmap <C-\> gc
 " Remove line numbers
 autocmd TermOpen * setlocal nonumber 
 " Open Terminal Split
-nnoremap <leader>t :vsp<bar>:term<CR>
-nnoremap <leader>ht :10sp<bar>:term<CR>
+nnoremap <leader>ht :vsp<bar>:term<CR>
+nnoremap <leader>t :10sp<bar>:term<CR>
 
 " Fzf
 nnoremap <C-p> :FZF<CR>
