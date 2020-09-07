@@ -17,5 +17,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 call plug#end()
 
