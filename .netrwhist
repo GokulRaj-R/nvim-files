@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='C:/Users/Gokul/AppData/Local/nvim/init'
+let g:netrw_dirhist_2='C:\Users\Gokul\AppData\Local\nvim'
+let g:netrw_dirhist_1='E:\Codes\Problems\Practice'
+let g:netrw_dirhist_0='C:\Users\Gokul\AppData\Local\nvim\init'
+let g:netrw_dirhist_9='C:/Users/Gokul/AppData/Local/nvim/init'
+let g:netrw_dirhist_8='C:\Users\Gokul\AppData\Local\nvim'
+let g:netrw_dirhist_7='E:\Codes\Problems\Practice'
+let g:netrw_dirhist_6='C:/Users/Gokul/AppData/Local/nvim/init'
+let g:netrw_dirhist_5='C:\Users\Gokul\AppData\Local\nvim'
+let g:netrw_dirhist_4='C:/Users/Gokul/AppData/Local/nvim/init'

@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
+  "pairs.disableLanguages": ["cpp"],
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
