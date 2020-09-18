@@ -23,7 +23,7 @@ nnoremap <leader>i :e %:rin_
 nnoremap <leader>o :e %:rout_
 
 " Compile OR Run
-autocmd filetype cpp nnoremap <F2> :w <bar> !g++ -Wall -Wextra -DLOCAL -O2 % -o %:r -Wl,--stack,268435456<CR>
-autocmd filetype cpp nnoremap <F3> :w <bar> !g++ -Wall -Wextra -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL -O2 % -o %:r -Wl,--stack,268435456<CR>
+autocmd filetype cpp nnoremap <F2> :w <bar> !g++ -Wall -Wextra -DLOCAL -std=c++17 -O2 % -o %:r -Wl,--stack,268435456<CR>
+autocmd filetype cpp nnoremap <F3> :w <bar> !g++ -Wall -Wextra -DLOCAL -std=c++17 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -O2 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F4> :term %:r<CR>
 autocmd filetype cpp nnoremap <F5> :!%:r < %:rin_1 > %:rout_
