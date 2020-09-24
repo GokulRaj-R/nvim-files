@@ -3,8 +3,12 @@ if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
-" colorscheme gruvbox
-colorscheme dracula
+
+let g:gruvbox_bold=0
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+
+" colorscheme dracula
 
 " NerdTree
 let g:NERDTreeShowHidden = 1
@@ -14,6 +18,19 @@ let g:NERDTreeStatusline = ''
 " Toggle
 nmap <leader>c cdCD
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+
+" Toggle Quick Fix
+command -bang -nargs=? QFix call QFixToggle(<bang>0)
+function! QFixToggle(forced)
+  if exists("g:qfix_win") && a:forced == 0
+    cclose
+    unlet g:qfix_win
+  else
+    copen 10
+    let g:qfix_win = bufnr("$")
+  endif
+endfunction
+nnoremap <leader>z :QFix<CR>
 
 " Python
 let g:python3_host_prog = 'C:\Users\Gokul\AppData\Local\Programs\Python\Python38\python.EXE'
@@ -49,9 +66,6 @@ vnoremap <leader>P "+P
 " Commenting
 nmap <C-\> gcc
 vmap <C-\> gc
-
-" Dev
-command! -nargs=0 Dev :cd E:\Dev
 
 " Terminal 
 " Remove line numbers

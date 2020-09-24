@@ -19,5 +19,6 @@ Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-dispatch'
 call plug#end()
 
