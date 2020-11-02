@@ -19,18 +19,8 @@ let g:NERDTreeStatusline = ''
 nmap <leader>c cdCD
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 
-" Toggle Quick Fix
-command -bang -nargs=? QFix call QFixToggle(<bang>0)
-function! QFixToggle(forced)
-  if exists("g:qfix_win") && a:forced == 0
-    cclose
-    unlet g:qfix_win
-  else
-    copen 10
-    let g:qfix_win = bufnr("$")
-  endif
-endfunction
-nnoremap <leader>z :QFix<CR>
+nnoremap <leader>z :cclose<CR>
+nnoremap z<leader> :copen<CR>
 
 " Python
 let g:python3_host_prog = 'C:\Users\Gokul\AppData\Local\Programs\Python\Python38\python.EXE'
@@ -55,7 +45,7 @@ nnoremap <silent> <C-Down> :resize -3<CR>
 
 " Copy to clipboard
 noremap  <leader>y  "+y
-nnoremap  <leader>Y  :%y+<CR>
+nnoremap  <leader>w  :%y+<CR>
 
 " Paste from clipboard
 nnoremap <leader>p "+p
