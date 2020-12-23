@@ -1,6 +1,7 @@
 " coc.vim
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
+inoremap <expr> <CR> pumvisible() ? "\<C-e><CR>" : "\<CR>"
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 " Use `[g` and `]g` to navigate diagnostics

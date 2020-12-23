@@ -35,5 +35,5 @@ nnoremap <leader>o :vsp %:rout_
 " Compile OR Run
 autocmd filetype cpp nnoremap <F2> :w <bar> Dispatch g++ -Wall -Wextra -DLOCAL -std=c++17 -O2 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F3> :w <bar> Dispatch g++ -Wall -Wextra -DLOCAL -std=c++17 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -O2 % -o %:r -Wl,--stack,268435456<CR>
-autocmd filetype cpp nnoremap <F4> :term %:r<CR>
+autocmd filetype cpp nnoremap <F4> :vsp <bar> :term %:r<CR>
 autocmd filetype cpp nnoremap <F5> :!%:r <  
