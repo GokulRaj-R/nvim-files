@@ -19,13 +19,13 @@ nnoremap <Leader>r7 :!%:r < %:rin_7 > %:rout_7<CR>
 nnoremap <Leader>r0 :!%:r < %:rin_0 > %:rout_0<CR>
 
 " Make ith Input File
-nnoremap <silent> <A-1> :tabe %:rin_1<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-2> :tabe %:rin_2<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-3> :tabe %:rin_3<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-4> :tabe %:rin_4<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-5> :tabe %:rin_5<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-6> :tabe %:rin_6<bar>:%d<bar>:put +<CR><bar>:wq<CR>
-nnoremap <silent> <A-7> :tabe %:rin_7<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-1> :vsp %:rin_1<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-2> :vsp %:rin_2<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-3> :vsp %:rin_3<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-4> :vsp %:rin_4<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-5> :vsp %:rin_5<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-6> :vsp %:rin_6<bar>:%d<bar>:put +<CR><bar>:wq<CR>
+nnoremap <silent> <A-7> :vsp %:rin_7<bar>:%d<bar>:put +<CR><bar>:wq<CR>
 nnoremap <silent> <A-0> :vsp %:rin_0<CR>
 
 " Open input and output manually
