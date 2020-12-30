@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='E:\Codes\Problems\Set\Aasf Biweekly 4 (Graph Theory)\A pointless game'
+let g:netrw_dirhist_4='C:\Users\Gokul\.vim\plugged\vim-snippets\snippets'
+let g:netrw_dirhist_3='C:\Users\Gokul\AppData\Local\nvim\init'
+let g:netrw_dirhist_2='E:\Codes\Problems\Practice'
 let g:netrw_dirhist_1='C:\Users\Gokul\AppData\Local\nvim\init'
 let g:netrw_dirhist_0='C:/Users/Gokul/AppData/Local'
 let g:netrw_dirhist_9='C:/Users/Gokul/AppData/Local/nvim'
 let g:netrw_dirhist_8='C:\Users\Gokul\AppData\Local\nvim\init'
 let g:netrw_dirhist_7='E:\Codes\Problems\Contest\CC\COOK125A'
 let g:netrw_dirhist_6='C:/Users/Gokul/AppData/Local/nvim'
-let g:netrw_dirhist_5='C:/Users/Gokul/AppData/Local/nvim/init'
-let g:netrw_dirhist_4='C:\Users\Gokul\AppData\Local\nvim\init'
-let g:netrw_dirhist_3='E:/Codes/Problems/Practice/Mock/Practice Contest/Binge/Atcoder/1600-1999'
-let g:netrw_dirhist_2='E:\Codes\Problems\Practice\Mock\Practice Contest\Binge\Atcoder\1600-1999'

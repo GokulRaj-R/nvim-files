@@ -1,4 +1,6 @@
 autocmd GUIEnter * simalt ~x
+autocmd TermOpen * setlocal nonumber 
+
 au VimEnter * GuiPopupmenu 0
 set nu
 set mouse=a
@@ -15,4 +17,3 @@ set softtabstop=2
 set splitbelow splitright
 set clipboard=unnamedplus
 set backspace=indent,eol,start
-

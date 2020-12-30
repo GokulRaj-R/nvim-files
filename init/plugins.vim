@@ -22,3 +22,36 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-dispatch'
 call plug#end()
 
+
+" ===========================================================================================
+" Settings
+" ===========================================================================================
+" Color Scheme
+if (has("termguicolors"))
+ set termguicolors
+endif
+syntax enable
+
+let g:gruvbox_bold=0
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+" colorscheme dracula
+
+" NerdTree
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeIgnore = []
+let g:NERDTreeStatusline = ''
+
+" Python
+let g:python3_host_prog = 'C:\Users\Gokul\AppData\Local\Programs\Python\Python38\python.EXE'
+
+" Fzf
+nnoremap <C-p> :FZF<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit'
+  \}
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+let g:airline_section_c = '%-1.3n | %t'
