@@ -34,6 +34,10 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
+" Save and Close
+nnoremap <F8>  <Esc><Bar>:w<CR><Bar>:close<CR>
+inoremap <F8>  <Esc><Bar>:w<CR><Bar>:close<CR>
+
 " Commenting
 nmap <C-\> gcc
 vmap <C-\> gc
