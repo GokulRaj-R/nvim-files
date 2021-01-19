@@ -8,6 +8,7 @@ set smarttab
 set expandtab
 set smartcase
 set tabstop=2
+set fdm=marker
 set autoindent
 set belloff=all
 set laststatus=2
