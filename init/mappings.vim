@@ -1,5 +1,5 @@
 " Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 nmap <leader>c cdCD
 
 " QuickFix

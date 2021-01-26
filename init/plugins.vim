@@ -1,5 +1,4 @@
 call plug#begin("~/.vim/plugged")
-Plug 'dracula/vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -9,6 +8,7 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -16,10 +16,10 @@ Plug 'tomlion/vim-solidity'
 Plug 'pangloss/vim-javascript'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
-Plug 'tpope/vim-dispatch'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'skywind3000/asyncrun.vim'
 call plug#end()
 
 
@@ -34,8 +34,8 @@ syntax enable
 
 let g:gruvbox_bold=0
 let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
-" colorscheme dracula
+" colorscheme gruvbox
+colorscheme jellybeans
 
 " NerdTree
 let g:NERDTreeShowHidden = 1
@@ -55,3 +55,4 @@ let g:fzf_action = {
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:airline_section_c = '%-1.3n | %t'
+let g:airline_theme='gruvbox'
