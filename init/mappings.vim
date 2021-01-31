@@ -33,10 +33,12 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+cnoremap <S-Insert> <C-r>*
+inoremap <S-Insert> <C-r>*
 
 " Save and Close
-nnoremap <F8>  <Esc><Bar>:w<CR><Bar>:close<CR>
-inoremap <F8>  <Esc><Bar>:w<CR><Bar>:close<CR>
+nnoremap <leader>x  <Esc><Bar>:w<CR><Bar>:close<CR>
+inoremap <leader>x  <Esc><Bar>:w<CR><Bar>:close<CR>
 
 " Commenting
 nmap <C-\> gcc

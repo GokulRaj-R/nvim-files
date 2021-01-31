@@ -1,7 +1,6 @@
 autocmd GUIEnter * simalt ~x
 autocmd TermOpen * setlocal nonumber 
 
-au VimEnter * GuiPopupmenu 0
 set nu
 set mouse=a
 set smarttab
@@ -14,6 +13,7 @@ set belloff=all
 set laststatus=2
 set shiftwidth=2
 set signcolumn=yes
+set noequalalways
 set softtabstop=2
 set splitbelow splitright
 set clipboard=unnamedplus

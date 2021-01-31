@@ -36,25 +36,25 @@ nnoremap <silent> <A-9> :15sp %:rin_9<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
 noremap <silent> <A-0> :15sp %:rin_0<CR>
 
 " Compile/Run
-autocmd filetype cpp nnoremap <F2> :w <bar> 
+autocmd filetype cpp nnoremap <F6> :w <bar> 
       \ AsyncRun -mode=term -pos=right -focus=0 -cols=50 
       \ g++ -Wall -Wextra -DGLOCAL -std=c++17 -O2 % -o %:r -Wl,--stack,268435456<CR>
 
-autocmd filetype cpp nnoremap <F3> :w <bar> 
+autocmd filetype cpp nnoremap <F7> :w <bar> 
       \ AsyncRun -mode=term -pos=right -focus=0 -cols=50 
       \ g++ -Wall -Wextra -Wshadow -Wfloat-equal -Wlogical-op -Wduplicated-cond -Wshift-overflow=2 -DGLOCAL -std=c++17 -D_GLIBCXX_ASSERTIONS 
       \ -O2 % -o %:r -Wl,--stack,268435456<CR><CR>
 
-autocmd filetype cpp nnoremap <F4> :w <bar> 
+autocmd filetype cpp nnoremap <F8> :w <bar> 
       \ AsyncRun -mode=term -pos=right -focus=0 -cols=50 
       \ g++ -Wall -Wextra -Wshadow -Wfloat-equal -Wlogical-op -Wduplicated-cond -Wshift-overflow=2 -DGLOCAL -std=c++17 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC 
       \ -O2 % -o %:r -Wl,--stack,268435456<CR><CR>
 
-autocmd filetype cpp nnoremap <F5> :w <bar> AsyncRun -mode=term -pos=right -focus=1 -cols=50 %:r<CR>
-autocmd filetype cpp nnoremap <F6> :w <bar> AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < 
+autocmd filetype cpp nnoremap <F9> :w <bar> AsyncRun -mode=term -pos=external %:r<CR>
+autocmd filetype cpp nnoremap <F10> :w <bar> AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < 
 
-autocmd filetype cpp imap <F2> <ESC><F2>
-autocmd filetype cpp imap <F3> <ESC><F3>
-autocmd filetype cpp imap <F4> <ESC><F4>
-autocmd filetype cpp imap <F5> <ESC><F5>
 autocmd filetype cpp imap <F6> <ESC><F6>
+autocmd filetype cpp imap <F7> <ESC><F7>
+autocmd filetype cpp imap <F8> <ESC><F8>
+autocmd filetype cpp imap <F9> <ESC><F9>
+autocmd filetype cpp imap <F10> <ESC><F10>
