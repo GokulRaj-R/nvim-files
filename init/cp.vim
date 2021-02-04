@@ -23,6 +23,7 @@ autocmd filetype cpp nnoremap <silent> <leader>m :call OutputFile(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>o :call OpenOutput(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>r :call RunFile(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>t :AsyncRun -mode=term -pos=right -focus=0 -cols=50 sampleRunner %:r<CR>
+autocmd filetype cpp nnoremap <silent> <leader>s :AsyncRun -mode=term -pos=right -focus=0 -cols=50 sampleRunner %:r -s<CR>
 
 " Make ith Input File
 nnoremap <silent> <A-1> :15sp %:r1.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
