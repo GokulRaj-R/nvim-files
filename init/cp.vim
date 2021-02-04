@@ -1,44 +1,45 @@
 " Run with ith Input File
 function! RunFile(f1)
-  execute "AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < %:rin_" . string(a:f1 - 48)
+  execute "AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < %:r" . string(a:f1 - 48) . ".in"
 endfunction
 
 " Run with ith Input File and Output File
 function! OutputFile(f1)
-  execute "AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < %:rin_" . string(a:f1 - 48) . " > %:rout_" . string(a:f1 - 48)
+  execute "AsyncRun -mode=term -pos=right -focus=0 -cols=50 %:r < %:r" . string(a:f1 - 48) .".in  > %:r" . string(a:f1 - 48) . ".out"
 endfunction
 
 " Open ith Input File
 function! OpenInput(f1)
-  execute "15sp %:rin_" . string(a:f1 - 48)
+  execute "15sp %:r" . string(a:f1 - 48) . ".in"
 endfunction
 
 " Open ith Output File
 function! OpenOutput(f1)
-  execute "15sp %:rout_" . string(a:f1 - 48)
+  execute "15sp %:r" . string(a:f1 - 48) .".out"
 endfunction
 
 autocmd filetype cpp nnoremap <silent> <leader>i :call OpenInput(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>m :call OutputFile(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>o :call OpenOutput(getchar())<CR>
 autocmd filetype cpp nnoremap <silent> <leader>r :call RunFile(getchar())<CR>
+autocmd filetype cpp nnoremap <silent> <leader>t :AsyncRun -mode=term -pos=right -focus=0 -cols=50 sampleRunner %:r<CR>
 
 " Make ith Input File
-nnoremap <silent> <A-1> :15sp %:rin_1<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-2> :15sp %:rin_2<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-3> :15sp %:rin_3<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-4> :15sp %:rin_4<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-5> :15sp %:rin_5<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-6> :15sp %:rin_6<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-7> :15sp %:rin_7<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-8> :15sp %:rin_8<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-nnoremap <silent> <A-9> :15sp %:rin_9<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
-noremap <silent> <A-0> :15sp %:rin_0<CR>
+nnoremap <silent> <A-1> :15sp %:r1.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-2> :15sp %:r2.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-3> :15sp %:r3.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-4> :15sp %:r4.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-5> :15sp %:r5.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-6> :15sp %:r6.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-7> :15sp %:r7.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-8> :15sp %:r8.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+nnoremap <silent> <A-9> :15sp %:r9.in<bar>:%d<bar>:normal "+gP<CR><bar>:wq<CR>
+noremap <silent> <A-0> :15sp %:r0.in<CR>
 
-" Compile/Run
+" Compile
 autocmd filetype cpp nnoremap <F6> :w <bar> 
       \ AsyncRun -mode=term -pos=right -focus=0 -cols=50 
-      \ g++ -Wall -Wextra -DGLOCAL -std=c++17 -O2 % -o %:r -Wl,--stack,268435456<CR>
+      \ g++ -Wall -Wextra -std=c++17 -O2 % -o %:r -Wl,--stack,268435456<CR>
 
 autocmd filetype cpp nnoremap <F7> :w <bar> 
       \ AsyncRun -mode=term -pos=right -focus=0 -cols=50 
