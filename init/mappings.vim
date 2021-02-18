@@ -58,3 +58,6 @@ nnoremap <Leader>l :ls<CR>:b<Space>
 nnoremap <Leader>b :bp<CR>
 nnoremap <Leader>f :bn<CR>
 nnoremap <Leader>g :e#<CR>
+
+" Open external command prompt
+command Cmd :!start cmd.exe

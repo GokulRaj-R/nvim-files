@@ -15,6 +15,7 @@ set shiftwidth=2
 set signcolumn=yes
 set noequalalways
 set softtabstop=2
+set scrollback=100000
 set splitbelow splitright
 set clipboard=unnamedplus
 set backspace=indent,eol,start

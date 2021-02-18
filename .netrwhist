@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='C:/Users/Gokul/.vim/plugged/vim-snippets/snippets/competitive-coding-snippets'
 let g:netrw_dirhist_2='C:\Users\Gokul\.vim\plugged\vim-snippets\snippets'
 let g:netrw_dirhist_1='E:/Codes/Problems/Practice'
 let g:netrw_dirhist_0='E:/Codes/Problems'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='C:/Users/Gokul/.vim/plugged/vim-snippets/snippets/competi
 let g:netrw_dirhist_6='C:\Users\Gokul\.vim\plugged\vim-snippets\snippets'
 let g:netrw_dirhist_5='C:/Users/Gokul/.vim/plugged/vim-snippets/snippets/competitive-coding-snippets'
 let g:netrw_dirhist_4='C:\Users\Gokul\.vim\plugged\vim-snippets\snippets'
-let g:netrw_dirhist_3='E:/Codes/Problems/Practice'
