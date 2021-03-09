@@ -61,3 +61,7 @@ nnoremap <Leader>g :e#<CR>
 
 " Open external command prompt
 command Cmd :!start cmd.exe
+
+"Run Program (Python)
+autocmd filetype python nnoremap <F7> :w <Bar> AsyncRun -mode=term -pos=external python %<CR>
+autocmd filetype python imap <F7> <ESC><F7>
