@@ -8,6 +8,7 @@ set expandtab
 set smartcase
 set tabstop=4
 set fdm=marker
+set cmdheight=1
 set autoindent
 set belloff=all
 set laststatus=2
@@ -19,3 +20,4 @@ set scrollback=100000
 set splitbelow splitright
 set clipboard=unnamedplus
 set backspace=indent,eol,start
+
