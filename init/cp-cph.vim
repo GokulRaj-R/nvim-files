@@ -5,9 +5,9 @@ endfunction
 
 
 " CpHelper Mappings
-autocmd filetype cpp nmap <leader>t :CphTest<CR>
-autocmd filetype cpp nmap <leader>r :CphRetest<CR>
-autocmd filetype cpp nmap <leader>e :call EditFile(getchar())<CR>
+autocmd filetype cpp nmap <leader>t :w <bar> CphTest<CR>
+autocmd filetype cpp nmap <leader>r :w <bar> CphRetest<CR>
+autocmd filetype cpp nmap <leader>e :w <bar> call EditFile(getchar())<CR>
 nmap <A-q> :CphReceive<CR>
 nmap <A-s> :CphStop<CR>
 
